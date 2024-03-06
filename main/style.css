@@ -544,3 +544,62 @@ footer .social-items .social-link {
 	background-color: rgb(45, 35, 35);
 	color: #fff;
 }
+
+/* media query style */
+
+@media screen and(min-width:768px) {
+	/* general style */
+
+	.btn-primary {
+		font-size: 1rem;
+		padding: 1rem 3rem;
+	}
+
+	/* header style */
+
+	header .btn-toggle {
+		display: none;
+	}
+
+	header .navigation {
+		display: flex;
+		flex-basis: auto;
+		margin: 0;
+	}
+
+	header .nav-items {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.nav-items .nav-link {
+		padding: 0.5rem;
+	}
+
+	/* hero style */
+
+	.hero-content {
+		max-width: 700px;
+	}
+
+	.hero-content h1 {
+		font-size: 3.5rem;
+	}
+
+	.hero-content p {
+		font-size: 1.125rem;
+	}
+
+	/* projects */
+
+	.contact-form .btn-primary {
+		width: auto;
+		justify-self: center;
+	}
+
+	/* footer style */
+	footer > .container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
