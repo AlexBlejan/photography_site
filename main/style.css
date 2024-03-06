@@ -20,6 +20,44 @@ body {
 	line-height: 1.4;
 }
 
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.btn-primary {
+	text-decoration: none;
+	color: #fff;
+	background-color: #0673bc;
+	display: inline-block;
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	transition: all 0.5s ease;
+	border: none;
+	cursor: pointer;
+}
+.btn-primary:hover {
+	color: #0673bc;
+	background-color: #fff;
+}
+section:not(.hero) {
+	padding: 6rem 0;
+	text-align: center;
+}
+
+section > .section-title {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+section > .section-subtitle {
+	text-align: center;
+	color: #6c757d;
+	margin-bottom: 3rem;
+}
+
 /*Header style*/
 header {
 	color: #fff;
