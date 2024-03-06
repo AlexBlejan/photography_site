@@ -44,6 +44,7 @@ body {
 	font-weight: bold;
 	opacity: 0.7;
 }
+
 section:not(.hero) {
 	padding: 6rem 0;
 	text-align: center;
@@ -382,9 +383,27 @@ header .nav-items {
 	border: none;
 }
 
-.contact-form .btn-primary {
+.contact-form .contact-btn {
 	grid-column: 1 / span 2;
 	width: 15rem;
+}
+
+.contact-btn {
+	text-decoration: none;
+	color: #fff;
+	background-color: rgb(45, 35, 35);
+	display: inline-block;
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	transition: all 0.5s ease;
+	border: 30px #fff;
+	cursor: pointer;
+}
+
+.contact-btn:hover {
+	color: rgb(45, 35, 35);
+	background-color: rgb(232, 230, 230);
+	font-weight: bold;
 }
 
 /* footer style */
