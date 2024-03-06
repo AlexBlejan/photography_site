@@ -153,3 +153,94 @@ header .nav-items {
 .hero-content p {
 	margin-bottom: 2rem;
 }
+
+/* Services style */
+
+.services > .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+	gap: 2rem;
+}
+
+.service-card {
+	text-align: center;
+	background-color: #f8f9fa;
+	border-radius: 5px;
+	padding: 1rem;
+	margin: 10px;
+	transition: box-shadow 0.5 ease;
+}
+
+/* aici am ramas - de continuat pentru ceilalti copii */
+
+.service-card:first-child {
+	height: 50vh;
+	background: url("./images/IMG_2899-3.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	color: antiquewhite;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.service-card:nth-child(2) {
+	height: 50vh;
+	background: url("./images/couple-sessions.png");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	color: antiquewhite;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.service-card:nth-child(3) {
+	height: 50vh;
+	background: url("./images/IMG_1968-2.jpg");
+	background-position: center center;
+	background-size: 40vh;
+	background-repeat: no-repeat;
+	position: relative;
+	color: antiquewhite;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.service-card:nth-child(4) {
+	height: 50vh;
+	background: url("./images/IMG_1488-Enhanced-NR.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	color: antiquewhite;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.service-card:nth-child(5) {
+	height: 50vh;
+	background: url("./images/IMG_2111.jpg");
+	background-position: center left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	color: antiquewhite;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.service-card:nth-child(6) {
+	height: 50vh;
+	background: url("./images/IMG_1904.jpg");
+	background-position: center left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	color: antiquewhite;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.service-card:hover {
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 1);
+	transform: translateY(-5px);
+}
+
+.service-card .service-title {
+	font-size: 1.125 rem;
+	margin-bottom: 0.5 rem;
+}
