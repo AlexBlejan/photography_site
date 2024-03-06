@@ -29,17 +29,20 @@ body {
 .btn-primary {
 	text-decoration: none;
 	color: #fff;
-	background-color: #0673bc;
+	/* background-color: rgb(45, 35, 35); */
 	display: inline-block;
 	padding: 1rem 2rem;
 	border-radius: 5px;
 	transition: all 0.5s ease;
-	border: none;
+	border: 30px #fff;
 	cursor: pointer;
+	opacity: 0.9;
 }
 .btn-primary:hover {
-	color: #0673bc;
-	background-color: #fff;
+	color: rgb(45, 35, 35);
+	background-color: rgb(232, 230, 230);
+	font-weight: bold;
+	opacity: 0.7;
 }
 section:not(.hero) {
 	padding: 6rem 0;
@@ -381,7 +384,7 @@ header .nav-items {
 
 .contact-form .btn-primary {
 	grid-column: 1 / span 2;
-	width: 10rem;
+	width: 15rem;
 }
 
 /* footer style */
