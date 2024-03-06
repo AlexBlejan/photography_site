@@ -168,6 +168,7 @@ header .nav-items {
 }
 
 .service-card {
+	position: relative;
 	text-align: center;
 	background-color: #f8f9fa;
 	border-radius: 5px;
@@ -242,11 +243,95 @@ header .nav-items {
 .service-card:hover {
 	box-shadow: 0 12px 30px rgba(0, 0, 0, 1);
 	transform: translateY(-5px);
+	transition: opacity 0.25s ease-in-out;
+	opacity: 0.6;
 }
 
 .service-card .service-title {
 	font-size: 1.125 rem;
 	margin-bottom: 0.5 rem;
+}
+
+.service-card .service-description {
+	font-weight: bold;
+	color: black;
+	background-color: #fff;
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: color 0.3s, background-color 0.3s;
+}
+
+.service-card:hover .service-description {
+	background-color: black;
+	color: black;
+
+	/* opacity: 0.5;
+	color: black
+	transition: color 0.3s; */
+}
+.service-card:hover img {
+	opacity: 0.8;
+}
+
+/*  */
+/*  */
+/*  */
+
+.services > .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 2rem;
+}
+
+.service-card {
+	position: relative;
+	text-align: center;
+	background-color: #f8f9fa;
+	border-radius: 5px;
+	padding: 1rem;
+	margin: 10px;
+	transition: box-shadow 0.5s ease;
+	overflow: hidden;
+	color: #000;
+}
+
+.service-card:hover {
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 1);
+	transform: translateY(-5px);
+	transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.service-card .service-title {
+	font-size: 1.125rem;
+	margin-bottom: 0.5rem;
+}
+
+.service-card .service-description {
+	font-weight: bold;
+	color: black;
+	background-color: rgba(255, 255, 255, 0);
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.3s, color 0.3s, background-color 0.3s;
+}
+
+.service-card:hover .service-description {
+	background-color: rgba(255, 255, 255, 0.8);
+	color: rgba(45, 35, 35, 1);
+	opacity: 1;
+	cursor: pointer;
+}
+
+.service-card:hover img {
+	opacity: 0.8;
 }
 
 /* Gallery Style */
@@ -274,7 +359,7 @@ header .nav-items {
 
 .project-card .project-overlay {
 	font-weight: bold;
-	color: #0673bc;
+	color: rgb(45, 35, 35);
 	background-color: #fff;
 	position: absolute;
 	inset: 0;
@@ -286,7 +371,7 @@ header .nav-items {
 }
 
 .project-card .project-overlay span {
-	border: solid 3px #0673bc;
+	border: solid 3px rgb(45, 35, 35);
 	padding: 1rem;
 	border-radius: 5px;
 }
