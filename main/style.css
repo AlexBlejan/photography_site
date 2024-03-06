@@ -244,3 +244,64 @@ header .nav-items {
 	font-size: 1.125 rem;
 	margin-bottom: 0.5 rem;
 }
+
+/* Gallery Style */
+
+.projects {
+	background-color: #f8f9fa;
+}
+
+.projects > .container {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.project-card {
+	background-color: #fff;
+	max-width: 400px;
+	justify-items: center;
+}
+
+.project-card .project-link {
+	display: block;
+	position: relative;
+	height: 300px;
+}
+
+.project-card .project-overlay {
+	font-weight: bold;
+	color: #0673bc;
+	background-color: #fff;
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s ease-in-out;
+}
+
+.project-card .project-overlay span {
+	border: solid 3px #0673bc;
+	padding: 1rem;
+	border-radius: 5px;
+}
+
+.project-card .project-link img {
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.project-card .project-link:hover .project-overlay {
+	opacity: 0.8;
+}
+
+.project-card .project-details {
+	text-align: center;
+	padding: 1rem;
+}
+
+.project-card .project-details h3 {
+	margin-bottom: 0.5rem;
+}
