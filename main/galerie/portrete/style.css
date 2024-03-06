@@ -1,0 +1,84 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+.gallery {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: max-content;
+}
+
+.photos {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+}
+
+.photos img {
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photos img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+}
+
+/* Additional styling for better layout */
+.photos {
+	padding: 20px;
+	max-width: 1200px; /* Limiting maximum width of the gallery */
+	margin: 0 auto; /* Centering the gallery horizontally */
+}
+
+/* Styling for hover effect on images */
+.photos img:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adding a subtle shadow effect */
+}
+
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	overflow: auto;
+}
+
+.lightbox-img {
+	display: block;
+	margin: 0 auto;
+	max-width: 90%;
+	max-height: 90%;
+}
+
+.close-btn {
+	color: #fff;
+	font-size: 40px;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	cursor: pointer;
+}
