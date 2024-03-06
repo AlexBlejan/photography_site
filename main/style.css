@@ -354,3 +354,32 @@ header .nav-items {
 	color: #0673bc;
 	background-color: #f8f9fa;
 }
+
+/* contact style */
+
+.contact {
+	background-color: #f8f9fa;
+}
+
+.contact-form {
+	display: grid;
+	grid-template-rows: 1fr 1 fr;
+	gap: 1rem;
+}
+
+.contact-form .form-message {
+	grid-column: 1 / span 2;
+}
+
+.contact-form input,
+.contact-form textarea {
+	font-family: inherit;
+	padding: 1rem;
+	width: 100%;
+	border: none;
+}
+
+.contact-form .btn-primary {
+	grid-column: 1 / span 2;
+	width: 10rem;
+}
