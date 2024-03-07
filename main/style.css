@@ -413,10 +413,11 @@ header .nav-items {
 }
 
 .team-member img {
-	max-width: 200px;
-	border-radius: 50%;
+	max-width: 300px;
+	max-height: 300px;
+	border-radius: 10%;
 	border: solid 5px #bbb;
-	margin: 20px;
+	margin: 50px;
 }
 
 .team-member p {
@@ -431,7 +432,7 @@ header .nav-items {
 .team-member .member-socials a {
 	text-decoration: none;
 	color: #fff;
-	background-color: #0673bc;
+	background-color: #6c757d;
 	width: 40px;
 	height: 40px;
 	display: flex;
