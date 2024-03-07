@@ -60,6 +60,10 @@ section > .section-subtitle {
 	text-align: center;
 	color: #6c757d;
 	margin-bottom: 3rem;
+	padding: 3rem;
+}
+
+.section-subtitle {
 }
 
 /*Header style*/
