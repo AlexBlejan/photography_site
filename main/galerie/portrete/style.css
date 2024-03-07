@@ -118,6 +118,123 @@ body {
 	width: fit-content;
 }
 
+.photos > div {
+	grid-column: span 4;
+	grid-row: span 0.5;
+}
+
+.photos .extra-wide {
+	grid-column: span 4;
+	grid-row: span 0.5;
+	height: 20vh;
+}
+video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 10%;
+	min-width: 1024px;
+	max-height: 576px;
+}
+
+.description {
+	grid-column: span 3;
+	grid-row: span 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #e0d0d0;
+	font-family: Georgia, serif;
+	font-size: 20px;
+}
+
+.wide-description {
+	grid-column: span 4;
+	grid-row: span 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #e0d0d0;
+	font-family: Georgia, serif;
+	font-size: 20px;
+}
+
+.box-description {
+	grid-column: span 2;
+	grid-row: span 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #e0d0d0;
+	font-family: Georgia, serif;
+	font-size: 20px;
+}
+
+p {
+	background-image: linear-gradient(
+		-225deg,
+
+		#52477d53 0%,
+		#6b61736c 29%,
+		#57986ada 40%,
+		#a44764c3 57%,
+		#7e6064ec 65%,
+		#5db71da0 100%,
+		#acae24bf 100%,
+		#10c12abb 90%,
+		#718e3f 80%,
+		#ccc619d9 85%,
+		#3f32d8 90%,
+		#281e80a7 100%,
+		#090faf 100%,
+		#a10e0e 100%,
+		#be1212b1 100%,
+		#a40e0e8a 100%,
+		#a10d0d68 100%,
+		#3e9cbc 100%,
+		#4c94b8 100%
+	);
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 300% auto;
+	color: #fff;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* text-fill-color: transparent; */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 7s linear infinite;
+	display: inline-block;
+	font-size: 190px;
+}
+
+@keyframes textclip {
+	0%,
+	100% {
+		background-position: 0 0;
+	}
+	10%,
+	90% {
+		background-position: 10% 0;
+	}
+	20%,
+	80% {
+		background-position: 20% 0;
+	}
+	30%,
+	70% {
+		background-position: 30% 0;
+	}
+	40%,
+	60% {
+		background-position: 40% 0;
+	}
+	50% {
+		background-position: 50% 0;
+	}
+}
+
 /* Go to the top button */
 #go-top {
 	position: fixed;
