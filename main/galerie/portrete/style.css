@@ -138,6 +138,11 @@ video {
 	max-height: 576px;
 }
 
+audio {
+	margin-top: 3rem;
+	width: 100%;
+}
+
 .description {
 	grid-column: span 3;
 	grid-row: span 1;
@@ -173,18 +178,18 @@ video {
 
 p {
 	background-image: linear-gradient(
-		-225deg,
+		-100deg,
 
 		#52477d53 0%,
 		#6b61736c 29%,
-		#57986ada 40%,
-		#a44764c3 57%,
-		#7e6064ec 65%,
+		#000000da 40%,
+		#e10b0b7a 57%,
+		#9f061aad 65%,
 		#5db71da0 100%,
 		#acae24bf 100%,
 		#10c12abb 90%,
-		#718e3f 80%,
-		#ccc619d9 85%,
+		#0a0c06 80%,
+		#141407d9 85%,
 		#3f32d8 90%,
 		#281e80a7 100%,
 		#090faf 100%,
@@ -204,7 +209,7 @@ p {
 	/* text-fill-color: transparent; */
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	animation: textclip 7s linear infinite;
+	animation: textclip 10s linear infinite;
 	display: inline-block;
 	font-size: 190px;
 }
@@ -212,7 +217,7 @@ p {
 @keyframes textclip {
 	0%,
 	100% {
-		background-position: 0 0;
+		background-position: 10% 0;
 	}
 	10%,
 	90% {
