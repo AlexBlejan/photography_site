@@ -5,7 +5,15 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #f4f4f4;
+	background-color: #000000d4;
+}
+
+audio {
+	display: grid;
+	grid-column: span 5;
+	grid-row: span 3;
+	padding: 10px;
+	width: 100%;
 }
 
 .gallery {
@@ -40,7 +48,7 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 20px;
-	background-color: #fff;
+	background-color: #0000007c;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 	border-radius: 12px;
 }
@@ -118,6 +126,65 @@ body {
 	width: fit-content;
 }
 
+.description {
+	grid-column: span 3;
+	grid-row: span 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #e0d0d0;
+	font-family: Georgia, serif;
+	font-size: 20px;
+}
+
+.wide-description {
+	grid-column: span 4;
+	grid-row: span 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #e0d0d0;
+	font-family: Georgia, serif;
+	font-size: 20px;
+}
+
+.box-description {
+	grid-column: span 2;
+	grid-row: span 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #e0d0d0;
+	font-family: Georgia, serif;
+	font-size: 20px;
+}
+
+p {
+	background-image: linear-gradient(
+		-225deg,
+		#6b5ca2 0%,
+		#8b7f97 29%,
+		#deb2c0 67%,
+		#d0cd89 100%
+	);
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+	color: #fff;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 5s linear infinite;
+	display: inline-block;
+	font-size: 190px;
+}
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
 /* Go to the top button */
 #go-top {
 	position: fixed;
@@ -143,4 +210,45 @@ body {
 	opacity: 0.7;
 	background-color: rgb(45, 35, 35);
 	color: #fff;
+}
+
+/* audio */
+
+/* .player {
+	width: 300px;
+	background: #fff;
+	margin: 100px;
+	padding: 20px 14px 8px 14px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 10px 2px 90px -11px rgba(13, 100, 76, 0.75);
+	-webkit-box-shadow: 10px 2px 90px -11px rgba(13, 100, 76, 0.75);
+	-moz-box-shadow: 10px 2px 90px -11px rgba(13, 100, 76, 0.75);
+} */
+
+.player {
+	grid-column: span 1;
+	grid-row: span 1;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.imgBx img {
+	grid-column: span 1;
+	grid-row: span 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 150px;
+}
+
+.player audio {
+	height: 30px;
+	width: 100%;
+	border-radius: 6px;
+	margin: 0;
+	padding: 0;
+	border: none;
 }
